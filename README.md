@@ -97,7 +97,7 @@ const { state } = storeInstance;
 
 // This fires every time the state updates
 storeInstance.events.subscribe('stateChange', () => {
-	messageElement.innerText = state.message;
+    messageElement.innerText = state.message;
 });
 ```
 
