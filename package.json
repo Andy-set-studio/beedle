@@ -1,0 +1,20 @@
+{
+  "name": "beedle",
+  "version": "1.0.0",
+  "description": "Beedle is a tiny little library to help you manage state across your application. Inspired by great libraries like Vuex and Redux, Beedle creates a central store that enables you to both better control and cascade state across your application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hankchizljaw/beedle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hankchizljaw/beedle/issues"
+  },
+  "homepage": "https://github.com/hankchizljaw/beedle#readme"
+}
