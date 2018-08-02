@@ -4,13 +4,35 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <title>Beedle Demo</title>
-        <link rel="stylesheet" href="" />
         <style>
             * {
                 box-sizing: border-box;
             }
+
+            body {
+                padding: 2rem;
+                font-family: sans-serif;
+            }
+
+            form {
+                margin-top: 2rem;
+                max-width: 50ch;
+            }
+        </style>
+        <link rel="stylesheet" media="all" href="https://rawgit.com/hankchizljaw/boilerform/master/dist/css/boilerform.min.css" />
     </head>
     <body>
-        body
+        <main>
+            <h1>Beedle demo</h1>
+            <p>Add text in the form, submit and the message will update.</p>
+            <p><b>Live Message:</b> <span aria-live="polite" class="js-message-element"></span></p>
+            <form class="boilerform" action="" method="post">
+                <div>
+                    <label for="message" class="c-label">Update the live message</label>
+                    <textarea name="message" id="message" class="c-input-field c-input-field--multiline" rows="10"></textarea>
+                </div>
+            </form>
+        </main>
     </body>
+    <script src="main.js" async type="module"></script>
 </html>

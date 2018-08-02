@@ -62,7 +62,7 @@ Once you've got those setup, you can create a `Store` instance like this:
 const storeInstance = new Store({
     actions,
     mutations,
-    state
+    state: initialState
 });
 ```
 
