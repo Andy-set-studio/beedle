@@ -103,7 +103,7 @@ storeInstance.events.subscribe('stateChange', () => {
 
 
 
-Head over to the [demo](#) to see this in action 🚀
+Head over to the [demo](https://github.com/hankchizljaw/beedle/tree/v0.3.0/demo) to see this in action 🚀
 
 
 
