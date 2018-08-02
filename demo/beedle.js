@@ -34,16 +34,8 @@ export default class Store {
                 // Set the value as we would normally
                 state[key] = value;
                 
-                // Trace out to the console. This will be grouped by the related action
-                console.log(`stateChange: ${key}: ${value}`);
-                
                 // Publish the change event for the components that are listening
                 self.events.publish('stateChange', self.state);
-                
-                // Give the user a little telling off if they set a value directly
-                if(self.status !== 'mutation') {
-                    console.warn(`You should use a mutation to set ${key}`);
-                }
                 
                 // Reset the status ready for the next operation
                 self.status = 'resting';
@@ -73,17 +65,11 @@ export default class Store {
           return false;
         }
         
-        // Create a console group which will contain the logs from our Proxy etc
-        console.groupCollapsed(`ACTION: ${actionKey}`);
-        
         // Let anything that's watching the status know that we're dispatching an action
         self.status = 'action';
         
         // Actually call the action and pass it the Store context and whatever payload was passed
         self.actions[actionKey](self, payload);
-        
-        // Close our console group to keep things nice and neat
-        console.groupEnd();
 
         return true;
     }
