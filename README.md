@@ -104,3 +104,13 @@ storeInstance.events.subscribe('stateChange', () => {
 
 
 Head over to the [demo](#) to see this in action 🚀
+
+
+
+## Acknowledgements 
+
+Thanks to [Eli Fitch](https://twitter.com/EliFitch/) for giving me the idea to call this Beedle. This matches my preference to call my little projects names based on Zelda. [Here's Beedle from Zelda](https://zelda.gamepedia.com/Beedle).
+
+
+
+Thanks to the incredible people who maintain projects such as [Redux](http://redux.js.org), [Vuex](http://vuex.vuejs.org) and [MobX](http://mobx.js.org) et. al. Thanks for making our lives easier and for inspiring this project.
