@@ -1,6 +1,6 @@
 {
   "name": "beedle",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Beedle is a tiny little library to help you manage state across your application. Inspired by great libraries like Vuex and Redux, Beedle creates a central store that enables you to both better control and cascade state across your application.",
   "main": "dist/beedle.js",
   "scripts": {
@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/hankchizljaw/beedle#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
     "webpack": "^4.16.4",
     "webpack-cli": "^3.1.0"
   }
