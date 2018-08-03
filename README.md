@@ -77,7 +77,7 @@ textElement.addEventListener('input', () => {
 
     // Dispatch the action, which will subsequently pass this message to the mutation
     // which in turn, updates the store's state
-    storeInstance.dispatch('saySomething', textElement.valuei.trim());
+    storeInstance.dispatch('saySomething', textElement.value.trim());
 });
 ```
 
