@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>State</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/2.styles.e5d7d25f.css" as="style"><link rel="preload" href="/assets/js/app.f0512756.js" as="script"><link rel="preload" href="/assets/js/1.ba2203dc.js" as="script"><link rel="prefetch" href="/assets/js/0.190fee55.js">
+    <link rel="stylesheet" href="/assets/css/2.styles.e5d7d25f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://github.com/hankchizljaw/beedle" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></div><div class="nav-item"><a href="https://www.npmjs.com/package/beedle" target="_blank" rel="noopener noreferrer" class="nav-link">npm</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://github.com/hankchizljaw/beedle" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></div><div class="nav-item"><a href="https://www.npmjs.com/package/beedle" target="_blank" rel="noopener noreferrer" class="nav-link">npm</a></div><!----></nav><!----></div><div class="page"><div class="content"><h1 id="state"><a href="#state" aria-hidden="true" class="header-anchor">#</a> State</h1><p>Beedle's state tree is a single object that can contain whatever data you want. It's <em>guarded</em> by a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy" target="_blank" rel="noopener noreferrer">Proxy</a> which keeps an eye on things for you and tells Beedle if something has been modified.</p><h2 id="example-object"><a href="#example-object" aria-hidden="true" class="header-anchor">#</a> Example object</h2><pre class="language-javascript"><code><span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'A title'</span><span class="token punctuation">,</span>
+    items<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            title<span class="token punctuation">:</span> <span class="token string">'Item 1'</span><span class="token punctuation">,</span>
+            url<span class="token punctuation">:</span> <span class="token string">'/'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre><h2 id="getting-an-item"><a href="#getting-an-item" aria-hidden="true" class="header-anchor">#</a> Getting an item</h2><p>Presuming you've instatiated Beedle like the <a href="/#getting-started">getting started</a> example, you can access state in a couple of ways.</p><h3 id="example"><a href="#example" aria-hidden="true" class="header-anchor">#</a> Example</h3><p>Here's a basic example of getting the title from state once the <code>storeInstance</code> has been created.</p><pre class="language-javascript"><code><span class="token comment">// An initialised store. Params redacted for brevity</span>
+<span class="token keyword">const</span> storeInstance <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Log the title of the above state example</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>storeInstance<span class="token punctuation">.</span>state<span class="token punctuation">.</span>title<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><p>You can also use a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment" target="_blank" rel="noopener noreferrer">destructuring assignment</a> to clean things up a bit</p><pre class="language-javascript"><code><span class="token comment">// Get the state only</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> state <span class="token punctuation">}</span> <span class="token operator">=</span> storeInstance<span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>state<span class="token punctuation">.</span>title<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><h2 id="modifying-state"><a href="#modifying-state" aria-hidden="true" class="header-anchor">#</a> Modifying state</h2><p>To modify state, it's best to dispatch an <a href="/guide/actions">action</a>. Head over there to carry on.</p><p><a href="/guide/actions">Move to Actions guide &gt;</a>.</p></div><!----><!----></div></div></div>
+    <script src="/assets/js/1.ba2203dc.js" defer></script><script src="/assets/js/app.f0512756.js" defer></script>
+  </body>
+</html>
