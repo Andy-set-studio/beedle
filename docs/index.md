@@ -1,5 +1,5 @@
 ---
-title: Beedle Home
+title: Beedle Docs
 ---
 # Beedle
 
