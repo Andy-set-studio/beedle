@@ -27,6 +27,8 @@ module.exports = () => {
                         ]
                     },
                     output: {
+                        library: name,
+                        libraryTarget: 'umd',
                         path: `${__dirname}/dist/`,
                         filename: `${name}.js`
                     }
