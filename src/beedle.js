@@ -2,7 +2,7 @@ import PubSub from './lib/pubsub.js';
 
 export default class Store {
     constructor(params) {
-        let self = this;
+        const self = this;
 
         // Add some default objects to hold our actions, mutations and state
         self.actions = {};
@@ -28,7 +28,7 @@ export default class Store {
         // Set our state to be a Proxy. We are setting the default state by 
         // checking the params and defaulting to an empty object if no default 
         // state is passed in
-        self.state = new Proxy((params.state || {}), {
+        self.state = new Proxy((params.initialState || {}), {
             set: function(state, key, value) {
                 
                 // Set the value as we would normally
@@ -56,7 +56,7 @@ export default class Store {
      */
     dispatch(actionKey, payload) {
   
-        let self = this;
+        const self = this;
         
         // Run a quick check to see if the action actually exists
         // before we try to run it
@@ -84,7 +84,7 @@ export default class Store {
      * @memberof Store
      */
     commit(mutationKey, payload) {
-        let self = this;
+        const self = this;
         
         // Run a quick check to see if this mutation actually exists
         // before trying to run it

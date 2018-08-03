@@ -8,7 +8,7 @@ This library was initially created as a prototype for [this article on CSS-Trick
 
 ## Not a Redux replacement
 
-Beedle is inspired by libraries like Redux, but certainly isn't designed to replace it. Beedle is aimed more at tiny little applications or where a development team might be looking to create the smallest possible footprint with they JavaScript.
+Beedle is inspired by libraries like Redux, but certainly isn't designed to replace it. Beedle is aimed more at tiny little applications or where a development team might be looking to create the smallest possible footprint with their JavaScript.
 
 
 
@@ -44,7 +44,7 @@ const actions = {
 const mutations = {
     setMessage(state, payload) {
         state.message = payload;
-        
+
         return state;
     }
 };
@@ -54,46 +54,41 @@ const initialState = {
 };
 ```
 
-
-
 Once you've got those setup, you can create a `Store` instance like this:
 
 ```javascript
 const storeInstance = new Store({
     actions,
     mutations,
-    state: initialState
+    initialState
 });
 ```
-
-
 
 ### 3) Use in your app
 
-Let's say you've got a text box that you type a message into. The form's submit event could look like this:
+Let's say you've got a text box that you type a message into. When the content is changed, it could dispatch a new message to your store:
 
 ```javascript
-const formElement = document.querySelector('form');
-const textElement = document.querySelector('input[type="text"]');
 
-formElement.addEventListener('submit', evt => {
-    evt.preventDefault();
-    
+// Grab the textearea and dispatch the action on 'input'
+const textElement = document.querySelector('textarea');
+
+textElement.addEventListener('input', () => {
+
     // Dispatch the action, which will subsequently pass this message to the mutation
     // which in turn, updates the store's state
-    storeInstance.dispatch('saySomething', textElement.value);
+    storeInstance.dispatch('saySomething', textElement.valuei.trim());
 });
 ```
-
-
 
 ### 4) Listen for changes
 
 Beedle uses the Pub/Sub pattern to transmit changes. Let's attach the message to a DOM element:
 
 ```javascript
+// Grab the text element and attach it to the stateChange event
 const messageElement = document.querySelector('.js-message-element');
-const { state } = storeInstance; 
+const { state } = storeInstance;
 
 // This fires every time the state updates
 storeInstance.events.subscribe('stateChange', () => {
@@ -101,16 +96,10 @@ storeInstance.events.subscribe('stateChange', () => {
 });
 ```
 
-
-
 Head over to the [demo](https://github.com/hankchizljaw/beedle/tree/v0.3.0/demo) to see this in action 🚀
-
-
 
 ## Acknowledgements 
 
 Thanks to [Eli Fitch](https://twitter.com/EliFitch/) for giving me the idea to call this Beedle. This matches my preference to call my little projects names based on Zelda. [Here's Beedle from Zelda](https://zelda.gamepedia.com/Beedle).
-
-
 
 Thanks to the incredible people who maintain projects such as [Redux](http://redux.js.org), [Vuex](http://vuex.vuejs.org) and [MobX](http://mobx.js.org) et. al. Thanks for making our lives easier and for inspiring this project.
