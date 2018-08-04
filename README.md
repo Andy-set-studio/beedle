@@ -20,7 +20,7 @@ Using a [Pub/Sub pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscrib
 
 As the diagram above shows, a simple, predictable flow is created by pushing data into an `action` which subsequently calls one or more `mutations`. Only the `mutation` can modify state, which helps with keeping track of changes.
 
-[**Continue reading the documentation**](https://beedle.hankchizljaw.io/state.html)
+[**Continue reading the documentation**](https://beedle.hankchizljaw.io/guide/state.html)
 
 ## Not a Redux replacement
 

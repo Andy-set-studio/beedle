@@ -1,6 +1,6 @@
 {
   "name": "beedle",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Beedle is a tiny little library to help you manage state across your application. Inspired by great libraries like Vuex and Redux, Beedle creates a central store that enables you to both better control and cascade state across your application.",
   "main": "dist/beedle.js",
   "scripts": {
