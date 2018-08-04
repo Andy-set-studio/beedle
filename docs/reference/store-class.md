@@ -9,7 +9,7 @@ The Store's `constructor` takes a `params` object which is required. It could te
 
 #### `actions`
 
-An object literal containing `action` methods that are called by the [dispatch](#dispatch) method.
+An object literal containing `action` methods that are called by the [dispatch](#dispatch-actionkey-payload) method.
 
 ##### Example
 
@@ -23,7 +23,7 @@ const actions = {
 
 #### `mutations`
 
-An object literal containing `mutation` methods that are called by the [commit](#commit) method.
+An object literal containing `mutation` methods that are called by the [commit](#commit-mutationkey-payload) method.
 
 ##### Example
 

@@ -1,16 +1,30 @@
 # Beedle
 
+![The Uncompressed size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?label=Uncompressed%20size)
+![The GZIP size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=gzip)
+![The Brotli size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=brotli)
+
 Beedle is a tiny little library to help you manage state across your application. Inspired by great libraries like Vuex and Redux, Beedle creates a central store that enables you to both better control and cascade state across your application.
 
 This library was initially created as a prototype for [this article on CSS-Tricks](https://css-tricks.com/build-a-state-management-system-with-vanilla-javascript/), where you learn how to build a state management system from scratch with vanilla JavaScript.
 
 [**See the documentation**](https://beedle.hankchizljaw.io)
 
+# How it works
+
+Beedle creates a pattern where a single source of truth, the '*Application State*' cascades state across your app in a predictable fashion. To modify state, a set flow of `actions` and `mutations` help create a traceable data-flow that makes things a little easier to debug. 
+
+Using a [Pub/Sub pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) which notifies anything that is subscribed to changes, a fully reactive front-end can be acheived with a few kilobytes of vanilla JavaScript.
+
+![A flow diagram that shows an action that calls a mutation, which mutates the state and triggers an update to anything that is listening](https://s3-us-west-2.amazonaws.com/s.cdpn.io/174183/beedle-flow-diagram.png)
+
+As the diagram above shows, a simple, predictable flow is created by pushing data into an `action` which subsequently calls one or more `mutations`. Only the `mutation` can modify state, which helps with keeping track of changes.
+
+[**Continue reading the documentation**](https://beedle.hankchizljaw.io/state.html)
+
 ## Not a Redux replacement
 
 Beedle is inspired by libraries like Redux, but certainly isn't designed to replace it. Beedle is aimed more at tiny little applications or where a development team might be looking to create the smallest possible footprint with their JavaScript.
-
-
 
 ## Getting started
 
