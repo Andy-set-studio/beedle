@@ -18,7 +18,7 @@ module.exports = {
         ],
         sidebar: [
             {
-                title: 'Quicklinks',
+                title: 'Quick links',
                 collapsable: false,
                 children: [
                     '/'
@@ -31,6 +31,13 @@ module.exports = {
                     '/guide/state.html',
                     '/guide/actions.html',
                     '/guide/mutations.html'
+                ]
+            },
+            {
+                title: 'Reference',
+                collapsable: false,
+                children: [
+                    '/reference/store-class.html'
                 ]
             }
         ],
