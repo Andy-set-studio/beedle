@@ -1,3 +1,6 @@
+---
+title: Actions
+---
 # Actions
 
 Actions are quite similar to [mutations](/guide/mutations.html), but they can contain async operations such as fetching data. The end-goal of an action is to `commit` one or more [mutations](/guide/mutations.html).

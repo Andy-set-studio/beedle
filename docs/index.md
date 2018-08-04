@@ -1,5 +1,5 @@
 ---
-title: Beedle Docs
+title: Beedle
 ---
 # Beedle
 
@@ -7,7 +7,15 @@ Beedle is a tiny little library to help you manage state across your application
 
 This library was initially created as a prototype for [this article on CSS-Tricks](https://css-tricks.com/build-a-state-management-system-with-vanilla-javascript/), where you learn how to build a state management system from scratch with vanilla JavaScript.
 
+# How it works
 
+Beedle creates a pattern where a single source of truth, the '*Application State*' cascades state across your app in a predictable fashion. To modify state, a set flow of `actions` and `mutations` help create a traceable data-flow that makes things a little easier to debug. 
+
+Using a [Pub/Sub pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) which notifies anything that is subscribed to changes, a fully reactive front-end can be acheived with a few kilobytes of vanilla JavaScript.
+
+![A flow diagram that shows an action that calls a mutation, which mutates the state and triggers an update to anything that is listening](https://s3-us-west-2.amazonaws.com/s.cdpn.io/174183/beedle-flow-diagram.png)
+
+As the diagram above shows, a simple, predictable flow is created by pushing data into an `action` which subsequently calls one or more `mutations`. Only the `mutation` can modify state, which helps with keeping track of changes.
 
 ## Not a Redux replacement
 

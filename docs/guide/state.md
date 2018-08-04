@@ -2,8 +2,6 @@
 
 Beedle's state tree is a single object that can contain whatever data you want. It's _guarded_ by a [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) which keeps an eye on things for you and tells Beedle if something has been modified. 
 
-
-
 ## Example object 
 
 ```javascript

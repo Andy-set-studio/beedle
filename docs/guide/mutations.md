@@ -2,8 +2,6 @@
 
 Mutations provide a synchronous method of *mutating* state. They have one job and one job only: mutate the state and return it.
 
-
-
 ## Example
 
 Presuming you're following-on from the [getting started guide](/#getting-started), We'll add a new mutation like so:
