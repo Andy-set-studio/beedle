@@ -26,6 +26,10 @@ As the diagram above shows, a simple, predictable flow is created by pushing dat
 
 Beedle is inspired by libraries like Redux, but certainly isn't designed to replace it. Beedle is aimed more at tiny little applications or where a development team might be looking to create the smallest possible footprint with their JavaScript.
 
+## Performance budget
+
+Beedle is intented to be _tiny_, so the largest that the uncompressed size will ever get to is 5-6kb. 
+
 ## Getting started
 
 You can pull Beedle down via [npm](http://npmjs.com) or take a [zip of this repository](https://github.com/hankchizljaw/beedle/archive/master.zip). The rest of this guide assumes you've used npm.
