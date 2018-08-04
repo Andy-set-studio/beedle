@@ -10,6 +10,8 @@ This library was initially created as a prototype for [this article on CSS-Trick
 
 [**See the documentation**](https://beedle.hankchizljaw.io)
 
+[**See basic demo**](https://basic-beedle-demo.hankchizljaw.io/)
+
 # How it works
 
 Beedle creates a pattern where a single source of truth, the '*Application State*' cascades state across your app in a predictable fashion. To modify state, a set flow of `actions` and `mutations` help create a traceable data-flow that makes things a little easier to debug. 
