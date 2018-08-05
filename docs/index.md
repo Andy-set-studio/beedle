@@ -7,6 +7,8 @@ Beedle is a tiny little library to help you manage state across your application
 
 This library was initially created as a prototype for [this article on CSS-Tricks](https://css-tricks.com/build-a-state-management-system-with-vanilla-javascript/), where you learn how to build a state management system from scratch with vanilla JavaScript.
 
+[**See the repository**](https://github.com/hankchizljaw/beedle/) - [**See basic demo**](https://beedle-basic-demo.hankchizljaw.io/) - [**See advanced demo**](https://beedle-advanced-demo.hankchizljaw.io/) 
+
 # How it works
 
 Beedle creates a pattern where a single source of truth, the '*Application State*' cascades state across your app in a predictable fashion. To modify state, a set flow of `actions` and `mutations` help create a traceable data-flow that makes things a little easier to debug. 

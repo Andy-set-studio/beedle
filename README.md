@@ -9,9 +9,7 @@ Beedle is a tiny little library to help you manage state across your application
 
 This library was initially created as a prototype for [this article on CSS-Tricks](https://css-tricks.com/build-a-state-management-system-with-vanilla-javascript/), where you learn how to build a state management system from scratch with vanilla JavaScript.
 
-[**See the documentation**](https://beedle.hankchizljaw.io)
-
-[**See basic demo**](https://basic-beedle-demo.hankchizljaw.io/)
+[**See the documentation**](https://beedle.hankchizljaw.io) - [**See basic demo**](https://beedle-basic-demo.hankchizljaw.io/) - [**See advanced demo**](https://beedle-advanced-demo.hankchizljaw.io/) 
 
 # How it works
 
