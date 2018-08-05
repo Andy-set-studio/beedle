@@ -107,3 +107,16 @@ The `context` is available because we're calling this `mutation` from within an 
 
 The data that you want to pass along with to your `mutation`.
 
+### `subscribe(callback)`
+
+This method allows you to pass a callback that should be fired when the store's state is modified. You can run the method as many times, with as many functions as you like as it stores them in a collection.
+
+#### `callback: function`
+
+A valid function that is called when the state is mutated. The callback is called like so:
+
+```javascript
+callback(data);
+```
+
+The `data` parameter is the `state` in its current form after the mutation that fired this event.

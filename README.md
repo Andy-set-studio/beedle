@@ -24,13 +24,13 @@ As the diagram above shows, a simple, predictable flow is created by pushing dat
 
 [**Continue reading the documentation**](https://beedle.hankchizljaw.io/guide/state.html)
 
-## Not a Redux replacement
+## A mini library for small projects
 
 Beedle is inspired by libraries like Redux, but certainly isn't designed to replace it. Beedle is aimed more at tiny little applications or where a development team might be looking to create the smallest possible footprint with their JavaScript.
 
 ## Performance budget
 
-Beedle is intented to be _tiny_, so the largest that the uncompressed size will ever get to is 5-6kb. 
+Beedle is intented to be _tiny_, so the largest that the uncompressed size will ever get to is 5kb. 
 
 ## Getting started
 
@@ -111,7 +111,7 @@ const messageElement = document.querySelector('.js-message-element');
 const { state } = storeInstance;
 
 // This fires every time the state updates
-storeInstance.events.subscribe('stateChange', () => {
+storeInstance.subscribe(() => {
     messageElement.innerText = state.message;
 });
 ```
