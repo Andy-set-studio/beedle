@@ -16,14 +16,14 @@ const mutations = {
 };
 
 const initialState = {
-    message: 'Hello, world'
+   message: 'Hello, world'
 };
 
 // Create our store instance
 const storeInstance = new Store({
     actions,
     mutations,
-    state: initialState
+    initialState
 });
 
 // Grab the textearea and dispatch the action on 'input'
@@ -41,7 +41,7 @@ const messageElement = document.querySelector('.js-message-element');
 const { state } = storeInstance;
 
 // This fires every time the state updates
-storeInstance.events.subscribe('stateChange', () => {
+storeInstance.subscribe(() => {
     messageElement.innerText = state.message;
 });
 
