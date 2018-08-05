@@ -60,8 +60,8 @@ export default class Store {
         // Run a quick check to see if the action actually exists
         // before we try to run it
         if(typeof self.actions[actionKey] !== 'function') {
-          console.error(`Action "${actionKey} doesn't exist.`);
-          return false;
+            console.error(`Action "${actionKey}" doesn't exist.`);
+            return false;
         }
         
         // Let anything that's watching the status know that we're dispatching an action
