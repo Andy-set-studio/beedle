@@ -1,6 +1,6 @@
 # Beedle
 
-![The Uncompressed size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?label=Uncompressed%20size)
+![The Uncompressed size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?label=Uncompressed)
 ![The GZIP size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=gzip)
 ![The Brotli size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=brotli)
 
