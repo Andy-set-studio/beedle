@@ -1,8 +1,8 @@
 # Beedle
 
-![The Uncompressed size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?label=Uncompressed)
-![The GZIP size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=gzip)
-![The Brotli size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=brotli)
+![The Uncompressed size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?label=Uncompressed%20Size)
+![The GZIP size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=gzip&label=GZIP%20Size)
+![The Brotli size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=brotli=Brotli%20Size)
 
 Beedle is a tiny little library to help you manage state across your application. Inspired by great libraries like Vuex and Redux, Beedle creates a central store that enables you to both better control and cascade state across your application.
 
