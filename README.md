@@ -5,9 +5,9 @@
 ![The GZIP size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=gzip&label=GZIP%20Size)
 ![The Brotli size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=brotli&label=Brotli%20Size)
 
-Beedle is a tiny little library to help you manage state across your application. Inspired by great libraries like Vuex and Redux, Beedle creates a central store that enables you to both better control and cascade state across your application.
+Beedle is a tiny library to help you manage state across your application. Inspired by great libraries like Vuex and Redux, Beedle creates a central store that enables you predictably control and cascade state across your application.
 
-This library was initially created as a prototype for [this article on CSS-Tricks](https://css-tricks.com/build-a-state-management-system-with-vanilla-javascript/), where you learn how to build a state management system from scratch with vanilla JavaScript.
+This library was initially created as a prototype for [this article on CSS-Tricks](https://css-tricks.com/build-a-state-management-system-with-vanilla-javascript/), where you learn how to build a state management system from scratch with Vanilla JavaScript.
 
 [**See the documentation**](https://beedle.hankchizljaw.io) - [**See basic demo**](https://beedle-basic-demo.hankchizljaw.io/) - [**See advanced demo**](https://beedle-advanced-demo.hankchizljaw.io/) 
 
