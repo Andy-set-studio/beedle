@@ -115,7 +115,7 @@ storeInstance.subscribe(() => {
 });
 ```
 
-Head over to the [demo](https://github.com/hankchizljaw/beedle/tree/v0.3.0/demo) to see this in action 🚀
+Head over to the [basic demo](https://beedle-basic-demo.hankchizljaw.io/) to see this in action 🚀
 
 ## Acknowledgements 
 
