@@ -38,10 +38,9 @@ textElement.addEventListener('input', () => {
 
 // Grab the text element and attach it to the stateChange event
 const messageElement = document.querySelector('.js-message-element');
-const { state } = storeInstance;
 
 // This fires every time the state updates
-storeInstance.subscribe(() => {
+storeInstance.subscribe(state => {
     messageElement.innerText = state.message;
 });
 
