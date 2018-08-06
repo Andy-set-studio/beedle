@@ -1,5 +1,4 @@
 module.exports = {
-    serviceWorker: true,
     head: [
         ['link', { rel: 'icon', href: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/174183/beedle-favicon.png' }]
     ],
