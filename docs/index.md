@@ -3,6 +3,12 @@ title: Beedle
 ---
 # Beedle
 
+![The current build status based on wether tests are passing](https://api.travis-ci.org/hankchizljaw/beedle.svg?branch=master)
+![The Uncompressed size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?label=Uncompressed%20Size)
+![The GZIP size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=gzip&label=GZIP%20Size)
+![The Brotli size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=brotli&label=Brotli%20Size)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 Beedle is a tiny library to help you manage state across your application. Inspired by great libraries like Vuex and Redux, Beedle creates a central store that enables you predictably control and cascade state across your application.
 
 This library was initially created as a prototype for [this article on CSS-Tricks](https://css-tricks.com/build-a-state-management-system-with-vanilla-javascript/), where you learn how to build a state management system from scratch with Vanilla JavaScript.
