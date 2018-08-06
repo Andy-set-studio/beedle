@@ -27,6 +27,14 @@ Beedle is inspired by libraries like Redux, but certainly isn't designed to repl
 
 Beedle is intented to be tiny, so the largest that the uncompressed size will ever get to is 5kb.
 
+## Browser support
+
+Beedle is aimed at browsers that support ES6 by default. It also uses a [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) to monitor state, so [anything that supports Proxy](https://caniuse.com/#feat=proxy) will support Beedle.
+
+You could use the [Proxy polyfill](https://github.com/GoogleChrome/proxy-polyfill) to support more browsers.
+
+Most major browsers will support Beedle with no issues. 
+
 ## Getting started
 
 You can pull Beedle down via [npm](http://npmjs.com) or take a [zip of this repository](https://github.com/hankchizljaw/beedle/archive/master.zip). The rest of this guide assumes you've used npm.
