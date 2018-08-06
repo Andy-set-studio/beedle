@@ -5,7 +5,7 @@ Beedle's state tree is a single object that can contain whatever data you want. 
 ## Example object 
 
 ```javascript
-const state = {
+const initialState = {
     title: 'A title',
     items: [
         {
