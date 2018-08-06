@@ -29,7 +29,7 @@ Beedle is inspired by libraries like Redux, but certainly isn't designed to repl
 
 ## Performance budget
 
-Beedle is intented to be _tiny_, so the largest that the uncompressed size will ever get to is 5kb. 
+Beedle is intended to be _tiny_, so the largest that the uncompressed size will ever get to is 5kb. 
 
 ## Browser support
 
