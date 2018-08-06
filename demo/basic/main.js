@@ -43,6 +43,3 @@ const messageElement = document.querySelector('.js-message-element');
 storeInstance.subscribe(state => {
     messageElement.innerText = state.message;
 });
-
-// Set the text by default
-messageElement.innerText = state.message;
