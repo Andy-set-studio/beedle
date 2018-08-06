@@ -30,7 +30,7 @@ Inside that method, you'll see that we are calling `context.commit`. This is us 
 
 ## Dispatch
 
-The `dispatch` method is part of the Beedle object and runs actions for you. You can `dispatch` wherever there's a referene to your store. Let's use the `storeInstance` object from the [previous step](/guide/state.html).
+The `dispatch` method is part of the Beedle object and runs actions for you. You can `dispatch` wherever there's a reference to your store. Let's use the `storeInstance` object from the [previous step](/guide/state.html).
 
 ```javascript
 // An initialised store. Params redacted for brevity
@@ -42,7 +42,7 @@ const storeInstance = new Store({
 storeInstance.dispatch('updateTitle', { text: 'The new text for the title' })
 ```
 
-Like the [previous step](/guide/state.html), you can also use destrucuring here too:
+Like the [previous step](/guide/state.html), you can also use destructuring here too:
 
 ```javascript
 const { dispatch } = storeInstance;
