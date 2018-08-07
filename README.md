@@ -16,6 +16,7 @@ This library was initially created as a prototype for [this article on CSS-Trick
 - [**Basic demo**](https://beedle-basic-demo.hankchizljaw.io/) 
 - [**Advanced demo**](https://beedle-advanced-demo.hankchizljaw.io/) 
 - [**Vue JS demo**](https://beedle-vue-demo.hankchizljaw.io/) 
+- [**React JS demo**](https://beedle-react-demo.hankchizljaw.io/) 
 
 # How it works
 
