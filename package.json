@@ -28,7 +28,7 @@
     "minimal"
   ],
   "author": "Andy Bell",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hankchizljaw/beedle/issues"
   },
