@@ -6,6 +6,9 @@
   "umd:main": "dist/beedle.umd.js",
   "module": "dist/beedle.m.js",
   "source": "src/beedle.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "mocha --require babel-core/register || true",
     "build": "microbundle",
