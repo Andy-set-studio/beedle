@@ -3,9 +3,13 @@
   "version": "0.6.8",
   "description": "Beedle is a tiny little library to help you manage state across your application. Inspired by great libraries like Vuex and Redux, Beedle creates a central store that enables you to both better control and cascade state across your application.",
   "main": "dist/beedle.js",
+  "umd:main": "dist/beedle.umd.js",
+  "module": "dist/beedle.m.js",
+  "source": "src/beedle.js",
   "scripts": {
     "test": "mocha --require babel-core/register || true",
-    "build": "node bundler.js"
+    "build": "microbundle",
+    "dev": "microbundle watch"
   },
   "repository": {
     "type": "git",
@@ -29,6 +33,7 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.1.2",
+    "microbundle": "^0.6.0",
     "mocha": "^5.2.0",
     "rollup": "^0.63.5",
     "rollup-plugin-uglify-es": "0.0.1",
