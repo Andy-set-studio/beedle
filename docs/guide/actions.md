@@ -55,6 +55,6 @@ dispatch('updateTitle', { text: 'The new text for the title' });
 
 ## Mutating state
 
-To actually modify the state, our [mutation](/guide/mutation.html) will take over.
+To actually modify the state, our [mutation](/guide/mutations.html) will take over.
 
 [Move to Mutations guide >](/guide/mutations.html).
