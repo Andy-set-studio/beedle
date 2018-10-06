@@ -10,7 +10,7 @@ Presuming you're following-on from the [getting started guide](/#getting-started
 const mutations = {
     setTitle(state, payload) {
         state.title = payload;
-        return title;
+        return state;
     }
 }
 ```
