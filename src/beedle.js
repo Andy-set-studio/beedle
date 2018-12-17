@@ -27,7 +27,7 @@ export default class Store {
         // checking the params and defaulting to an empty object if no default 
         // state is passed in
         self.state = new Proxy((params.initialState || {}), {
-            set: function(state, key, value) {
+            set(state, key, value) {
                 
                 // Set the value as we would normally
                 state[key] = value;
@@ -88,7 +88,7 @@ export default class Store {
         // Run a quick check to see if this mutation actually exists
         // before trying to run it
         if(typeof self.mutations[mutationKey] !== 'function') {
-            console.log(`Mutation "${mutationKey}" doesn't exist`);
+            console.error(`Mutation "${mutationKey}" doesn't exist`);
             return false;
         }
         
