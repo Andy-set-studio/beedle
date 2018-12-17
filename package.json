@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hankchizljaw/beedle.git"
+    "url": "git+https://github.com/andybelldesign/beedle.git"
   },
   "keywords": [
     "state management",
@@ -26,9 +26,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hankchizljaw/beedle/issues"
+    "url": "https://github.com/andybelldesign/beedle/issues"
   },
-  "homepage": "https://github.com/hankchizljaw/beedle#readme",
+  "homepage": "https://github.com/andybelldesign/beedle#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
