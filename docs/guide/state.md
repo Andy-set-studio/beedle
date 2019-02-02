@@ -20,7 +20,7 @@ const initialState = {
 
 ## Getting an item 
 
-Presuming you've instatiated Beedle like the [getting started](/#getting-started) example, you can access state in a couple of ways.
+Presuming you've instantiated Beedle like the [getting started](/#getting-started) example, you can access state in a couple of ways.
 
 
 
