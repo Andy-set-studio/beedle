@@ -3,7 +3,7 @@ title: Beedle
 ---
 # Beedle
 
-![The current build status based on wether tests are passing](https://api.travis-ci.org/hankchizljaw/beedle.svg?branch=master)
+![The current build status based on whether tests are passing](https://api.travis-ci.org/hankchizljaw/beedle.svg?branch=master)
 ![The Uncompressed size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?label=Uncompressed%20Size)
 ![The GZIP size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=gzip&label=GZIP%20Size)
 ![The Brotli size of Beedle](http://img.badgesize.io/https://unpkg.com/beedle?compression=brotli&label=Brotli%20Size)
@@ -26,7 +26,7 @@ This library was initially created as a prototype for [this article on CSS-Trick
 
 Beedle creates a pattern where a single source of truth, the '*Application State*' cascades state across your app in a predictable fashion. To modify state, a set flow of `actions` and `mutations` help create a traceable data-flow that makes things a little easier to debug. 
 
-Using a [Pub/Sub pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) which notifies anything that is subscribed to changes, a fully reactive front-end can be acheived with a few kilobytes of vanilla JavaScript.
+Using a [Pub/Sub pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) which notifies anything that is subscribed to changes, a fully reactive front-end can be achieved with a few kilobytes of vanilla JavaScript.
 
 ![A flow diagram that shows an action that calls a mutation, which mutates the state and triggers an update to anything that is listening](https://s3-us-west-2.amazonaws.com/s.cdpn.io/174183/beedle-flow-diagram.png)
 
@@ -106,7 +106,7 @@ Let's say you've got a text box that you type a message into. When the content i
 
 ```javascript
 
-// Grab the textearea and dispatch the action on 'input'
+// Grab the textarea and dispatch the action on 'input'
 const textElement = document.querySelector('textarea');
 
 textElement.addEventListener('input', () => {
