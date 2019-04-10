@@ -96,8 +96,8 @@ export default class Store {
         // Get a new version of the state by running the mutation and storing the result of it
         let newState = self.mutations[mutationKey](self.state, payload);
 
-        // Merge the old and new together to create a new state and set it
-        self.state = Object.assign(self.state, newState);
+        // Update the old state with the new state returned from our mutation
+        self.state = newState;
 
         return true;
     }
