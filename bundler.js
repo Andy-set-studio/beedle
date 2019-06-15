@@ -15,6 +15,13 @@ async function bundleJavaScript() {
     await bundle.write({
         format: 'umd',
         name: 'beedle',
+        file: 'beedle.umd.js',
+        dir: `${__dirname}/dist/`,
+    });
+
+    await bundle.write({
+        format: 'esm',
+        name: 'beedle',
         file: 'beedle.js',
         dir: `${__dirname}/dist/`,
     });
