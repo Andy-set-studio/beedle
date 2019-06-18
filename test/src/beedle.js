@@ -21,7 +21,7 @@ const storeInstance = new Store({
     initialState,
     actions: {
         runUpdate(context, payload) {
-            context.commit('updateState', payload);
+            return context.commit('updateState', payload);
         }    
     },
     mutations: {
