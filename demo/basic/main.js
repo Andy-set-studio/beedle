@@ -9,14 +9,14 @@ const actions = {
 
 const mutations = {
     setMessage(state, payload) {
-        state.message = payload;
+        state.message[0] = payload;
 
         return state;
     }
 };
 
 const initialState = {
-   message: 'Hello, world'
+   message: ['Hello, world']
 };
 
 // Create our store instance
@@ -41,5 +41,5 @@ const messageElement = document.querySelector('.js-message-element');
 
 // This fires every time the state updates
 storeInstance.subscribe(state => {
-    messageElement.innerText = state.message;
+    messageElement.innerText = state.message[0];
 });
