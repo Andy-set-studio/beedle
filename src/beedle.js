@@ -26,22 +26,30 @@ export default class Store {
         // Set our state to be a Proxy. We are setting the default state by
         // checking the params and defaulting to an empty object if no default
         // state is passed in
-        self.state = new Proxy((params.initialState || {}), {
-            set(state, key, value) {
-
-                // Set the value as we would normally
-                state[key] = value;
-
-                // Fire off our callback processor because if there's listeners,
-                // they're going to want to know that something has changed
-                self.processCallbacks(self.state);
-
-                // Reset the status ready for the next operation
-                self.status = 'resting';
-
-                return true;
+        const handler = {
+          get: (target, key) => {
+            if (typeof target[key] === "object" && target[key] !== null) {
+              return new Proxy(target[key], handler);
+            } else {
+              return target[key];
             }
-        });
+          },
+          set(state, key, value) {
+            // Set the value as we would normally
+            state[key] = value;
+
+            // Fire off our callback processor because if there's listeners,
+            // they're going to want to know that something has changed
+            self.processCallbacks(self.state);
+
+            // Reset the status ready for the next operation
+            self.status = "resting";
+
+            return true;
+          }
+        };
+
+        self.state = new Proxy(params.initialState || {}, handler);
     }
 
     /**
