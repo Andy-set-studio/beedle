@@ -4,6 +4,7 @@
   "description": "Beedle is a tiny little library to help you manage state across your application. Inspired by great libraries like Vuex and Redux, Beedle creates a central store that enables you to both better control and cascade state across your application.",
   "main": "dist/beedle.umd.js",
   "module": "dist/beedle.js",
+  "files": "dist/**",
   "scripts": {
     "test": "mocha --require babel-core/register || true",
     "build": "node bundler.js"
