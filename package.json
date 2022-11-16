@@ -37,7 +37,7 @@
     "mocha": "^5.2.0",
     "rollup": "^0.63.5",
     "rollup-plugin-uglify-es": "0.0.1",
-    "vuepress": "^0.13.1"
+    "vuepress": "^1.9.7"
   },
   "dependencies": {}
 }
